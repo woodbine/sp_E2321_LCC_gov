@@ -130,32 +130,3 @@ if errors > 0:
 
 
 #### EOF
-
-
-#### EOF
-
-#     filename = entity_id + "_" + csvYr + "_" + csvMth
-#     todays_date = str(datetime.now())
-#     file_url = url
-#     validFilename = validateFilename(filename)
-#     validURL, validFiletype = validateURL(file_url)
-#     if not validFilename:
-#         print filename, "*Error: Invalid filename*"
-#         print file_url
-#         errors += 1
-#         continue
-#     if not validURL:
-#         print filename, "*Error: Invalid URL*"
-#         print file_url
-#         errors += 1
-#         continue
-#     if not validFiletype:
-#         print filename, "*Error: Invalid filetype*"
-#         print file_url
-#         errors += 1
-#         continue
-#     scraperwiki.sqlite.save(unique_keys=['l'], data={"l": file_url, "f": filename, "d": todays_date })
-#     print filename
-#
-# if errors > 0:
-#      raise Exception("%d errors occurred during scrape." % errors)
